@@ -1,7 +1,9 @@
 .box{
     height: 100px;
+    width: 100px;
     background-color: violet;
     border: 1px solid black;
+   
 }
 
 .box1{
@@ -11,8 +13,14 @@
 }
 
 .header{
-    background-color: red;
-    height: 150px;
+    /* background-color: red; */
+    height: 100px;
+}
+
+.logo{
+    /* chiều cao của logo (con) sẽ bằng 100% (100px) của header */
+    height: 100%;
+    width: auto;
 }
 
 .navigator{
@@ -21,16 +29,26 @@
 }
 
 .aside{
-    background-color: blue;
+    /* background-color: blue; */
     height: 500px;
+    padding: 0;
 }
 
 .article{
     height: 500px;
     background-color: aqua;
+    /* d-flex */
+    /* display: flex; */
+    /* space-between , space-around  , space-evenly  ;*/
+    /* justify-content: center; */
+    padding: 0;
 }
 
 .footer{
     height: 100px;
     background-color: gray;
+}
+
+.navbar{
+    margin: 0 -15px;
 }
