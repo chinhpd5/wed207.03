@@ -19,63 +19,77 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">Trang chủ</a>
+                <!-- nút menu cho giao diện tablet và mobile -->
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <!-- Menu giới thiệu -->
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
-                    </li>
+                    <!-- menu trái -->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Menu giới thiệu -->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Giới thiệu</a>
+                        </li>
 
-                    <!-- menu Liên hệ -->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Liên hệ</a>
-                    </li>
+                        <!-- menu Liên hệ -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Liên hệ</a>
+                        </li>
 
-                     <!-- menu Góp ý -->
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Góp ý</a>
-                    </li>
+                        <!-- menu Góp ý -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Góp ý</a>
+                        </li>
 
-                     <!-- menu Hỏi đáp -->
-                     <li class="nav-item">
-                        <a class="nav-link" href="#">Hỏi đáp</a>
-                    </li>
-                    <!-- Menu Tài khoản -->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Tài khoản
-                        </a>
+                        <!-- menu Hỏi đáp -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hỏi đáp</a>
+                        </li>
+                        <!-- Menu Tài khoản -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Tài khoản
+                            </a>
 
-                        <ul class="dropdown-menu">
-                            <!-- phần 1 -->
-                            <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
-                            <li><a class="dropdown-item" href="#">Đăng kí</a></li>
-                            <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
-                            <!-- dấu gạch ngang -->
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- phần 2 -->
-                            <li><a class="dropdown-item" href="#">Hồ sơ cá nhân</a></li>
-                            <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
-                            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
-                            <!-- dấu gạch ngang -->
-                            <li><hr class="dropdown-divider"></li>
-                            <!-- phần 3 -->
-                            <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
+                            <ul class="dropdown-menu">
+                                <!-- phần 1 -->
+                                <li><a class="dropdown-item" href="#">Đăng nhập</a></li>
+                                <li><a class="dropdown-item" href="#">Đăng kí</a></li>
+                                <li><a class="dropdown-item" href="#">Quên mật khẩu</a></li>
+                                <!-- dấu gạch ngang -->
+                                <li><hr class="dropdown-divider"></li>
+                                <!-- phần 2 -->
+                                <li><a class="dropdown-item" href="#">Hồ sơ cá nhân</a></li>
+                                <li><a class="dropdown-item" href="#">Đổi mật khẩu</a></li>
+                                <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+                                <!-- dấu gạch ngang -->
+                                <li><hr class="dropdown-divider"></li>
+                                <!-- phần 3 -->
+                                <li><a class="dropdown-item" href="#">Đơn hàng</a></li>
 
 
-                        </ul>
-                    </li>
-                    <!-- <li class="nav-item">
-                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                    </li> -->
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
+                            </ul>
+                        </li>
+                        <!-- <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                        </li> -->
+                    </ul>
+
+                    <!-- menu phải -->
+                    <!-- loại bỏ class me-auto và thêm class d-flex -->
+                    <ul class="navbar-nav  mb-2 mb-lg-0 d-flex">
+                        <!-- Menu Tiếng Việt-->
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Tiếng Việt</a>
+                        </li>
+
+                        <!-- menu Tiếng Anh -->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">English</a>
+                        </li>
+                    </ul>
+
                 </div>
             </div>
         </nav>
