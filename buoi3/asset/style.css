@@ -52,3 +52,12 @@
 .navbar{
     margin: 0 -15px;
 }
+
+.heading-table{
+    margin: 0;
+    padding: 15px 10px;
+}
+
+.col-action{
+    width: 200px;
+}
