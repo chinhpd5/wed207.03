@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài tập</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myController">
+        <form ng-submit="onSubmit($event)" action="">
+            <input type="text" ng-model="name">
+            <button type="submit">Gửi</button>
+        </form>
+        <h2>{{sayHello}}</h2>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

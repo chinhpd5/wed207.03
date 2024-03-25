@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 6: AngularJS</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <div ng-controller="myController">
+        <h1>{{welcome}}</h1>
+
+        <h2>{{info.nganh}}</h2>
+        <h3>{{info.khoa}}</h3>
+
+        <ul>
+            <li>{{ hobies[0] }}</li>
+            <li>{{ hobies[1] }}</li>
+            <li>{{ hobies[2] }}</li>
+        </ul>
+
+        <div>
+            <h3>Count: {{count}}</h3>
+            <button ng-click="Tang()">Tăng</button>
+            <button ng-click="Giam()">Giảm</button>
+            <button ng-click="Reset()">Reset</button>
+        </div>
+        <!-- bind model -->
+        <div>
+            <input type="text" ng-model="name">
+            <h3>cách 1: {{name}}</h3>
+            <h3 ng-bind="name">cách 2: </h3>
+        </div>
+    </div>
+
+    <script>
+        const app = angular.module("myApp",[]);
+
+        function myFunction($scope){
+            $scope.name ="Giá trị mặc định"
+
+            $scope.welcome ="Xin chào các bạn";
+            $scope.info = {
+                nganh : "Ứng dụng phần mềm",
+                khoa : 18
+            }
+            $scope.hobies = ["Đá bóng", "Bơi","Game"];
+
+            $scope.count = 0;
+
+            $scope.Tang = function(){
+                $scope.count++; // $scope.count = $scope.count + 1 
+            }
+            $scope.Giam = function(){
+                $scope.count--;
+            }
+            $scope.Reset = function(){
+                $scope.count= 0;
+            }
+        }
+
+        app.controller("myController",myFunction)
+
+    </script>
+</body>
+</html>
