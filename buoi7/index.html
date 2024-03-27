@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buổi 7</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+</head>
+<body ng-app="myApp">
+    <!-- phạm vi của biến trong function chỉ được sử dụng trong controller của nó  -->
+    <!-- phạm vi biến của cha có thể kế thừa sang con -->
+    <!-- Sử dụng $rootScope để khai báo biến có phạm vi toàn cục -->
+    <div ng-controller="parent" style="background-color: red;">
+        <h1>{{textGlobal}}</h1>
+        <h1>{{textParent}}</h1>
+        <h1>{{textChild}}</h1>
+
+        <div ng-controller="child" style="background-color: greenyellow;">
+            <h1>{{textParent}}</h1>
+            <h1>{{textChild}}</h1>
+        </div>
+
+    </div>
+
+    <script src="./main.js"></script>
+</body>
+</html>
