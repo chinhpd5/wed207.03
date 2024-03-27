@@ -32,8 +32,23 @@
         </h2>
         <h2>Học lực:
             <span ng-if="data.mark >= 8">Giỏi</span>
-            <span ng-if="data.mark < 8 && data.mark >= 5">Trung bình</span>
+            <span 
+                ng-if="data.mark < 8 && data.mark >= 5" >
+            Trung bình
+            </span>
             <span ng-if="data.mark < 5">Yếu</span>
+        </h2>
+        <h2>Khoa:
+            <span ng-switch="data.khoa">
+                <span ng-switch-when="UDPM">Ứng dụng phần mềm</span>
+                <span ng-switch-when="TKW">Thiết kế web</span>
+                <span ng-switch-default>IT</span>
+            </span>
+        </h2>
+        <h2>Sở thích:
+            <ul ng-repeat="item in data.hobbies">
+                <li>{{item}}</li>
+            </ul>
         </h2>
     </div>
 
