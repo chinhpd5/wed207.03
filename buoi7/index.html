@@ -13,13 +13,28 @@
     <div ng-controller="parent" style="background-color: red;">
         <h1>{{textGlobal}}</h1>
         <h1>{{textParent}}</h1>
+        <!-- textChild không thể truy cập được từ controller con -->
         <h1>{{textChild}}</h1>
 
         <div ng-controller="child" style="background-color: greenyellow;">
+            <!-- textParent có thể truy cập được từ controller cha -->
             <h1>{{textParent}}</h1>
             <h1>{{textChild}}</h1>
         </div>
 
+    </div>
+
+    <div ng-controller="myControler">
+        <h2>Họ và tên: {{data.name}}</h2>
+        <h2>Giới tính:
+            <span ng-show="data.gender">Nam</span>
+            <span ng-hide="data.gender">Nữ</span>
+        </h2>
+        <h2>Học lực:
+            <span ng-if="data.mark >= 8">Giỏi</span>
+            <span ng-if="data.mark < 8 && data.mark >= 5">Trung bình</span>
+            <span ng-if="data.mark < 5">Yếu</span>
+        </h2>
     </div>
 
     <script src="./main.js"></script>
