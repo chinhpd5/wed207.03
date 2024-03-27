@@ -50,6 +50,14 @@
                 <li>{{item}}</li>
             </ul>
         </h2>
+
+        <div>
+            <ul ng-repeat="(index,item) in productList">
+                <li>{{index + 1}} | {{item.name}} | {{item.price}}</li>
+            </ul>
+        </div>
+
+        <!-- sử dụng table trong bootstrap để hiện thị nội dung của mảng productList -->
     </div>
 
     <script src="./main.js"></script>
